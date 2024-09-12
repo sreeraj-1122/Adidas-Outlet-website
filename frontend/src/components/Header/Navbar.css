@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    background-color: white;
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+.logo-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.image-adidas {
+    width: 70px;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.links-nav-upper-wrapper {
+    display: flex;
+    gap: 19px;
+    list-style: none;
+    color: rgb(60, 59, 59);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.links-nav-upper-wrapper a {
+    text-decoration: none;
+    color: rgb(60, 59, 59);
+}
+
+.links-nav-upper-wrapper a:hover {
+    text-decoration: underline;
+    color: rgb(30, 30, 30);
+}
+
+.links-nav-bottom-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.nav-adidas {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 470px;
+    top: 30px;
+}
+
+.nav-adidas li {
+    position: relative;
+    font-size: 15px;
+}
+
+.links-nav h5 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.links-nav a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+
+.animation-nav {
+    width: 0;
+    background-color: black;
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+    margin-top: 7px;
+}
+
+.links-nav:hover>.animation-nav {
+    width: 100%;
+}
+
+.icon-link-nav {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+    color: black;
+    padding-top: 20px;
+    position: relative;
+}
+
+.icon-link-nav a {
+    color: black;
+    font-size: 20px;
+}
+
+.icon-link-nav a:hover {
+    color: rgb(30, 30, 30);
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(233, 236, 239);
+    border-radius: 3px;
+    padding: 5px;
+    width: 200px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-input-container:focus-within {
+    box-shadow: 0 0 0 1px black;
+}
+
+.search-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 4px;
+    flex-grow: 1;
+    color: rgb(124, 126, 127);
+}
+
+.search-input-container span {
+    display: flex;
+    align-items: center;
+    flex: .5;
+}
+
+.search-icon {
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.number-badge {
+    position: absolute;
+    top: 10px;
+    right: 85px;
+    background-color: rgb(255, 200, 0);
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    animation: moveUpDown 0.5s ease-in-out 3s infinite;
+}
+
+.hidden-nav-drop-men,
+.hidden-nav-drop-women {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    z-index: 9999;
+}
+
+.links-nav:hover .hidden-nav-drop-men,
+.links-nav:hover .hidden-nav-drop-women {
+    display: block;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* Mobile devices */
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-icon .menu {
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .links-nav-upper-wrapper {
+        display: none;
+    }
+    .logo-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+        justify-content: center;
+    }
+    .image-adidas {
+        width: 50px;
+    }
+    .search-input-container {
+        background-color: transparent;
+        width: 0px;
+    }
+    .search-input {
+        display: none;
+    }
+    .faviourate {
+        position: absolute;
+        left: -180px;
+        bottom: -4px;
+    }
+    .number-badge {
+        right: 65px;
+    }
+}

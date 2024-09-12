@@ -1,0 +1,48 @@
+.banner-wrapper{
+    background-color: rgb(224, 224, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.banner-wrapper button {
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none; 
+     position: relative;  /* For correct hover effect */
+    z-index: 2; 
+    transition: all.3s;
+}
+
+.banner-wrapper button:hover {
+    color: rgb(111, 111, 111);
+     cursor: pointer;
+ }
+ .border-div {
+    width: 215px;
+    height: 54px;
+    border: 1px solid black;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+
+}
+
+@media (max-width: 480px) {
+    .banner-wrapper{
+        background-color: rgb(224, 224, 6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        gap: 30px;
+        flex-direction: column;
+    }
+}

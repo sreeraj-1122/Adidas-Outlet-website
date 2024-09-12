@@ -1,0 +1,115 @@
+/* Card container */
+.product-card {
+    background-color: #fff;
+    width: 300px;
+    height: 440px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+   border: 1px solid black;
+  }
+  
+  /* Product image */
+  .product-image {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    object-fit: contain;
+  }
+  
+  /* Discount label */
+  .discount-label {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: #fff;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+  }
+  .favourate{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  /* Product details */
+  .product-details {
+    padding: 8px;
+    margin-top: 2px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .product-category {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .product-prices {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    background-color: #fff;
+      padding: 5px 10px;
+      transition: transform 0.3s ease; /* Adding transition for smooth movement */
+
+  }
+  
+  .discounted-price {
+    color: red;
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .product-colors {
+    font-size: 12px;
+    color: #666;
+    margin-top: 0px;
+  }
+
+  .add-to-cart-btn {
+    display: inline-block;
+    background-color: #07a150;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #048a44;
+  }
+  .product-card:hover .discount-label,
+.product-card:hover .product-prices {
+  transform: translateY(-10px); /* Moves upward by 10px */
+}

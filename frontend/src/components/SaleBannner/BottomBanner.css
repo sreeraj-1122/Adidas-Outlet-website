@@ -1,0 +1,72 @@
+.banner-main {
+    width: 100%;
+    padding: 50px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+
+.banner-main p {
+    font-size: 16px;
+    color: rgb(11, 11, 11);
+    text-align: center; 
+}
+
+.banner-main button {
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    position: relative; 
+    z-index: 2;
+    transition: all 0.3s;
+    font-size: 16px; 
+}
+
+.arrow-icon {
+    font-size: 19px;
+}
+
+.button-div {
+    position: relative;
+}
+
+.banner-main .border-div {
+    width: 217px;
+    height: 54px;
+    border: 1px solid black;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+.banner-main button:hover {
+    color: rgb(111, 111, 111);
+    cursor: pointer;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner-main button {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .banner-main button {
+        padding: 17px 45px;
+        font-size: 12px;
+    }
+
+   
+
+}
+
