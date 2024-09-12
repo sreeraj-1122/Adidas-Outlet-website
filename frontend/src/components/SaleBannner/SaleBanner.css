@@ -67,7 +67,7 @@
   background: #555;
 }
 
-.category-item {
+.categories-container .category-item {
   position: relative;
   flex: 0 0 170px;  /* Fixed width, don't grow or shrink */
   height: 160px;
@@ -87,7 +87,7 @@
   transition: transform 0.3s ease;
 }
 
-.category-item:hover {
+.categories-container .category-item:hover {
   transform: translateY(-15px);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
